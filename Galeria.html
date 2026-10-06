@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Nayrelis Rumbos</title>
+    <link rel="stylesheet" href="Css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Nayrelis Rumbos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Estudios.html">Estudios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Habilidades.html">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Galeria.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-dark text-center p-4">
+        <h1>Proyectos</h1>
+    </header>
+
+    <div class="container">
+
+        <!-- carrusel (sacado de carousel/index.html) -->
+        <div id="carruselProyectos" class="carousel slide mb-4" data-bs-ride="carousel">
+            
+            <!-- indicadores (los puntitos de abajo) -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carruselProyectos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Proyecto 1"></button>
+                <button type="button" data-bs-target="#carruselProyectos" data-bs-slide-to="1" aria-label="Proyecto 2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Image/Luttan.jpg" class="d-block w-100" alt="Luttan Donuts" style="height: 700px; object-fit: contain; ">
+                
+                </div>
+                <div class="carousel-item">
+                    <img src="Image/greenReborn.jpeg" class="d-block w-100" alt="Green Reborn" style="height: 700px; object-fit: contain;">
+                  
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselProyectos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselProyectos" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- tarjetas (sacado de album/index.html) -->
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card">
+                    <img src="Image/Luttan.jpg" class="card-img-top" alt="Luttan Donuts">
+                    <div class="card-body">
+                        <h5 class="card-title">Luttan Donuts</h5>
+                        <p class="card-text">Programa de manejo de una empresa de donas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="Image/greenReborn.jpeg" class="card-img-top" alt="Green Reborn">
+                    <div class="card-body">
+                        <h5 class="card-title">Green Reborn</h5>
+                        <p class="card-text">Videojuego en 3D sobre el medio ambiente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        <p class="mb-2">CONTÁCTAME! <a href="mailto:nayrelisrumbos@gmail.com" class="text-warning">nayrelisrumbos@gmail.com</a></p>
+        <a href="https://wa.me/573213953144" class="btn btn-success btn-sm mb-2" target="_blank">WhatsApp</a>
+        <a href="index.html" class="btn btn-outline-light btn-sm mb-2">Volver al inicio</a>
+        <p class="mb-0 mt-2">&copy; 2026 Nayrelis Rumbos</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
